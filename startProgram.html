@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Grain Chain</title>
+  </head>
+  <body>
+    <h2>Prueba de Lógica GrainChain</h1>
+    <h3>Requerimientos</h2>
+    <p>
+      Una vez seguida las <a href=index.html>instruciones</a>
+    </p>
+    <p>
+      1.- Cargar habitación: en esta opción el programa deberá cargar un archivo
+      txt que contenga la matriz de uno y ceros que representa la habitación, donde
+      los 0 representan la zona de la habitación que está sin pared y los 1 las zonas
+      en donde existe pared.
+    </p>
+    <p>
+      2.- Mostrar colocación de Bombillos Óptimos: En esta opción el programa
+      deberá mostrar la solución de la menor cantidad de bombillos que usted pudo colocar
+      para iluminar toda la habitación. La forma de mostrarlo por pantalla queda a su
+      imaginación, pero se debe ver claramente donde están las paredes y donde se colocaron
+      los bombillos.
+    </p>
+
+    <input type="file" id="real-file" hidden="true" />
+    <button type="button" id="custom-button" style="margin-left: 340px">Cargar archivo</button>
+    <span id="custom-text"></span>
+    <br>
+    <br>
+    <button type="button" id="custom-button" style="margin-left: 220px" onclick="loadFileAsText(1)">Mostrar habitacion</button>
+    <button type="button" id="custom-button" style="margin-left: 30px" onclick="loadFileAsText(2)">Mostrar colocación de Bombillos</button>
+    <p id="text-hidden">Seleccione el archivo txt y inicie el programa</p>
+    <script type="text/javascript" src="logic.js"></script>
+
+  </body>
+</html>
